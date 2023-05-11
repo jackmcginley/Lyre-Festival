@@ -1,0 +1,108 @@
+/*Mobile stylesheet*/
+
+@media screen and (max-width: 1100px){
+
+    .hero_image {
+        display: block;
+        width: 100%;
+        height: auto;
+        text-align: center ;
+        padding: 10px 0 90px 0;
+        background-image: url(../images/music-festival.jpg);
+        background-size: contain;
+        background-repeat: none;
+        
+    }
+}
+@media screen and (max-width: 600px){
+
+    /* Fix the side navigation bar with width 100px */
+    .fixed_navbar {
+        background-color:  #40513B;
+        position: fixed;
+        height: 100vh;
+        width: 100px;
+        z-index: 1;
+        font-size: 0.8em;
+        font-weight: bold;
+        text-transform: uppercase;
+        padding: 1px
+    }
+    /* Other parts of the header and footer have left padding of 100px to avoid clash with fixed navbar */
+.header_bar,
+.footer_bar {
+    padding: 0 0 0 100px;
+    position: relative;
+    text-align: center;
+    background-color: #40513B;
+    z-index: 0;
+}
+/* Main content padding 100px left to avoid clash*/
+.main_content {
+    padding: 0 0 0 100px;
+    position: relative;
+}
+    
+    .lineup_grid{
+        display: grid;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 80%;
+        grid-template-columns: 90%;
+        column-gap: 10px;
+        text-align: center;
+    }
+
+    .info_grid{
+        display: grid;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 80%;
+        grid-template-columns: 90%;
+        column-gap: 10px;
+        text-align: center;
+    }
+    .gridrow {
+        display: grid;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 80%;
+        grid-template-columns: 90%;
+        gap: 20px;
+        text-align: left;
+    }
+    .image1{
+        grid-column: 1;
+        grid-row: 1/span 1;
+    }
+    .image2{
+        grid-column: 1;
+        grid-row: 3/span 1;
+    }
+    .image3{
+        grid-column: 1;
+        grid-row: 5/span 1;
+    }
+    .wideview_only{
+        display:none
+    }
+    .artist_name{
+        
+        text-align: center;
+        padding-top: 00%;
+        color: #d32a32;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+    .artist_name p{
+        border-block: 5px solid #609966;
+        display: inline;
+    }
+    /* Remove columns side by side*/
+.twocolumn {
+    width: 100%;
+    clear: both;
+    float: inherit;
+    
+}
+}

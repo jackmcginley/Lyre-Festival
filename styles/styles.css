@@ -1,0 +1,433 @@
+/* see palette https://colorhunt.co/palette/edf1d69dc08b60996640513b */
+
+body {
+    background-image: linear-gradient(#609966, #EDF1D6);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+
+ol,
+ul {
+    list-style-type: none;
+}
+
+img {
+    border-radius: 8px;
+    width: 100%;
+    height: auto;
+}
+
+/* Fix the side navigation bar with width 150px */
+.fixed_navbar {
+    background-color: #40513B;
+    position: fixed;
+    height: 100%;
+    width: 150px;
+    z-index: 1;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 1px
+}
+
+.fixed_navbar a:hover {
+    font-size: 1.3em;
+    /* transition: 300ms; */
+}
+
+nav ul {
+    padding-inline-start: 20px;
+}
+
+nav li {
+    padding: 10px 0 0 0;
+}
+
+/* nav a {
+    color: #EDF1D6;
+} */
+/* unvisited link */
+a:link {
+    color: #EDF1D6;
+}
+
+/* visited link */
+a:visited {
+    color: white;
+}
+
+/* mouse over link */
+a:hover {
+    color: orange;
+}
+
+/* selected link */
+a:active {
+    color: yellow;
+}
+
+/* Other parts of the header and footer have left padding of 150px to avoid clash with fixed navbar */
+.header_bar,
+.footer_bar {
+    padding: 0 0 0 150px;
+    position: relative;
+    text-align: center;
+    background-color: #40513B;
+    z-index: 0;
+}
+
+
+
+.hero_image {
+    display: block;
+    width: 100%;
+    height: 350px;
+    text-align: center;
+    padding: 10px 0 90px 0;
+    background-image: url(../images/music-festival.jpg);
+    background-size: contain;
+
+}
+
+.hero_heading {
+    display: block;
+    width: 100%;
+    height: 150px;
+    text-align: center;
+    padding: 10px 0 90px 0;
+    /* background-image: url(../images/green_background.jpg) ;
+    background-repeat: repeat;
+    background-size: contain; */
+    background-size: cover;
+}
+
+.hero_heading h1,
+.hero_image h1 {
+    color: #DF2E38;
+    text-transform: uppercase;
+    text-decoration: double;
+    font-weight: bold;
+    font-size: 5.5vw;
+
+
+}
+
+main {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Main content padding 150px left to avoid clash*/
+.main_content {
+    padding: 0 0 0 150px;
+    position: relative;
+}
+
+.blankspace {
+    height: 20px;
+    color: transparent;
+}
+
+/* This is the row with page description*/
+.row1 {
+    border-color: #609966;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 25px;
+    padding: 12px;
+    width: fit-content;
+    text-align: center;
+    margin: 20px auto;
+    background-color: #9DC08B;
+    font-weight: bold;
+    font-size: 2vw;
+    color: #DF2E38;
+    text-transform: uppercase;
+}
+
+.row1 p {
+    text-transform: none;
+    margin: 0;
+}
+
+/* There are several grid styles.  Gridrow is on Home page with 4 columns. Lineup_grid is 3 columns for the table showing the line-up. Info_grid is 2 columns for the grid of images with info links*/
+.gridrow {
+    display: grid;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 80%;
+    grid-template-columns: 25% 25% 25% 25%;
+    gap: 20px;
+    text-align: left;
+}
+
+.image1 {
+    grid-column: 1;
+    grid-row: 1/span 2;
+}
+
+.image2 {
+    grid-row: 2/span 2;
+}
+
+.image3 {
+    grid-column: 3;
+    grid-row: 3/span 2;
+}
+
+.artist_name {
+
+    text-align: left;
+    padding-top: 20%;
+    color: #d32a32;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/* 
+.artist_name span:nth-child(2){
+    border-bottom: 5px solid #609966;
+    border-block: 3px solid #609966;
+    display: inline;
+} */
+
+
+
+/* Row style covers the full width of the main content as a row.*/
+.row {
+    display: block;
+    text-align: center;
+    width: 100%;
+    padding: 20px 0 20px 0;
+    clear: both;
+}
+
+.row p {
+
+    color: #d32a32;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-block: 5px solid #609966;
+    display: inline;
+
+}
+
+.lineup_grid {
+    display: grid;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 80%;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+    column-gap: 10px;
+    text-align: center;
+}
+
+.whichday {
+    background-color: #40513B;
+    color: yellow;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1em;
+
+}
+
+.acts {
+    border: solid;
+    border-color: black;
+    background-color: #9DC08B;
+    font-size: 20px;
+    padding: 10px;
+    color: black;
+    font-size: 0.8em;
+
+}
+
+.acts p {
+    display: inline;
+}
+
+.headliner {
+    color: #DF2E38;
+    font-weight: bold;
+    font-size: 2vw;
+}
+
+.info_grid {
+    display: grid;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 80%;
+    grid-template-columns: 50% 50%;
+    column-gap: 10px;
+    text-align: center;
+}
+
+/* To get the text centred over the image, create a figure div with relative position, which is inside the grid cell.  Inside this figure div, create another div with absolute position (in the centre) to hold the text  */
+figure {
+    margin: 0;
+    position: relative
+}
+
+figure img {
+    opacity: 0.85;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: Futura-PT, Century Gothic, sans-serif;
+    /* text-transform: uppercase; */
+    font-size: 2vw;
+    color: white;
+    border-block: 4px solid;
+    display: inline;
+    font-variant: small-caps;
+    ;
+}
+
+.centered h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/* This twocolumn style sites under the row style, to divide the row in two with columns side by side*/
+.twocolumn {
+    width: 50%;
+    float: left;
+
+}
+
+.tickets {
+    padding: 0 10% 0 15%;
+    color: #DF2E38;
+    font-size: 2.3vw;
+
+}
+
+.tickets h1 {
+    /* font-size: 2.3vw; */
+    font-variant: small-caps;
+}
+
+.ticket_block {
+    position: relative;
+    width: 70%;
+    height: 70px;
+    margin: auto;
+    margin-top: 20px;
+    padding: 20px;
+    border: solid;
+    color: #3F4E4F;
+    background-color: #609966;
+    text-transform: uppercase;
+    font-size: 16px;
+
+}
+
+/* Absolute position with negative numbr on left side, to place this to the left of the ticket_block parent*/
+.ticket_info {
+    position: absolute;
+    left: -10%;
+    width: 50%;
+    height: 30px;
+    margin: auto;
+    padding: 20px;
+    background-color: #40513B;
+    color: #EDF1D6;
+    text-align: center;
+}
+
+/* Absolute position, to place this on the right of the ticket_block parent*/
+.buyticket {
+    position: absolute;
+    right: 0;
+    top: 28px;
+    width: 30%;
+    height: 15px;
+    border: solid 2px;
+    border-radius: 20px;
+    border-color: #EDF1D6;
+    margin: auto;
+    padding: 10px;
+    background-color: #DF2E38;
+    color: #EDF1D6;
+    text-align: center;
+    font-size: 16px;
+}
+
+.forminput {
+    padding: 0 10% 0 10%;
+    color: #DF2E38;
+    font-weight: bolder;
+    text-align: left;
+
+}
+
+.columnheader {
+    width: 60%;
+    margin: auto;
+    color: #DF2E38;
+    text-align: center;
+}
+
+.forminput label {
+    margin-left: 2%;
+}
+
+.forminput input {
+    height: 30px;
+    width: 90%;
+    background-color: #EDF1D6;
+    margin-bottom: 10px;
+    border: none;
+}
+
+.forminput textarea {
+    width: 90%;
+    background-color: #EDF1D6;
+    margin-bottom: 10px;
+}
+
+.formbuttons input {
+    width: 25%;
+    margin-left: 10%;
+    border: solid #40513B;
+    border-radius: 8px;
+}
+
+footer {
+    clear: both;
+}
+
+
+.social_icons {
+    display: block;
+    /* width: 20%; */
+    margin: auto;
+    padding: 10px;
+    background-color: #EDF1D6;
+    text-align: center;
+    color: yellow;
+}
+
+.social_icons img {
+    display: inline;
+    width: 32px;
+    height: 32px;
+    padding-left: 10px;
+
+}
+
+.footer_nav {
+
+    padding: 2vh 0 2vh 0;
+}
+
+/* Display as inline to get the links to run horizontally instead of vertical*/
+.footer_nav li {
+    display: inline-block;
+    padding: 0 1% 0 0px;
+}
